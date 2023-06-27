@@ -5,11 +5,11 @@ public class Program
 {
     static void Main(string[] args)
     {
-        Employee emp1 = new Employee("pravin", 50000);
+        Employee emp1 = new Employee("pravin", 50000,Dept.Development);
         emp1.CalculateSalary();
         Console.WriteLine(emp1.PrintDetails());
 
-        Employee emp2 = new Employee("pawan", 60000);
+        Employee emp2 = new Employee("pawan", 60000,Dept.Admin);
         emp2.CalculateSalary();
         Console.WriteLine(emp2.PrintDetails());
 
@@ -20,7 +20,7 @@ public class Program
 
 
 
-        Employee employee = new Employee("Suraj", 28000);
+        Employee employee = new Employee("Suraj", 28000, Dept.Sales);
         employee.CalculateSalary();
 
         Console.WriteLine(employee.PrintDetails());
